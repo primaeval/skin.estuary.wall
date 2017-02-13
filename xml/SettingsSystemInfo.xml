@@ -9,9 +9,9 @@
 			<aspectratio>scale</aspectratio>
 			<fadetime>600</fadetime>
 			<animation effect="zoom" center="auto" end="102,102" time="0" condition="Integer.IsGreater(System.StereoscopicMode,0)">conditional</animation>
-			<animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
-			<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
-			<animation effect="fade" time="400">VisibleChange</animation>
+			<animation effect="fade" start="0" end="100" time="0">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0">WindowClose</animation>
+			<animation effect="fade" time="0">VisibleChange</animation>
 			<imagepath background="true" colordiffuse="bg_overlay">$INFO[Skin.String(HomeFanart.path)]settings$INFO[Skin.String(HomeFanart.ext)]</imagepath>
 			<visible>!Player.HasMedia + !String.IsEmpty(Skin.String(HomeFanart.path))</visible>
 		</control>
@@ -86,7 +86,7 @@
 				<top>100</top>
 				<bottom>315</bottom>
 				<pagecontrol>60</pagecontrol>
-				<autoscroll delay="5000" repeat="7500" time="5000">!Control.HasFocus(60)</autoscroll>
+				<autoscroll delay="5000" repeat="7500" time="0">!Control.HasFocus(60)</autoscroll>
 			</control>
 			<control type="scrollbar" id="60">
 				<right>0</right>
@@ -95,14 +95,14 @@
 				<bottom>312</bottom>
 				<orientation>vertical</orientation>
 				<texturesliderbackground />
-				<animation effect="slide" end="6,0" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(60)">conditional</animation>
+				<animation effect="slide" end="6,0" time="0" tween="sine" easing="inout" condition="!Control.HasFocus(60)">conditional</animation>
 				<onleft>9000</onleft>
 				<onright>9000</onright>
 				<visible>Control.IsVisible(30)</visible>
 				<animation effect="fade" start="0" end="100" time="0" delay="300">Visible</animation>
 				<animation effect="fade" start="100" end="0" time="0">Hidden</animation>
-				<animation effect="fade" start="0" end="100" delay="300" time="320">WindowOpen</animation>
-				<animation effect="fade" start="100" end="0" time="150">WindowClose</animation>
+				<animation effect="fade" start="0" end="100" delay="300" time="0">WindowOpen</animation>
+				<animation effect="fade" start="100" end="0" time="0">WindowClose</animation>
 			</control>
 			<control type="image">
 				<left>360</left>

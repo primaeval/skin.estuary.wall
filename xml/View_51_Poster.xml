@@ -18,8 +18,8 @@
 				<top>4</top>
 				<width>100%</width>
 				<height>410</height>
-				<animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
-				<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
+				<animation effect="fade" start="0" end="100" time="0">WindowOpen</animation>
+				<animation effect="fade" start="100" end="0" time="0">WindowClose</animation>
 				<animation effect="fade" time="0">VisibleChange</animation>
 				<texture colordiffuse="E6FFFFFF">dialogs/dialog-bg-nobo.png</texture>
 				<visible>Control.IsVisible(51)</visible>
@@ -109,7 +109,7 @@
 						<top>480</top>
 						<height>250</height>
 						<right>115</right>
-						<autoscroll time="3000" delay="7000" repeat="5000">!System.HasModalDialog + Skin.HasSetting(AutoScroll)</autoscroll>
+						<autoscroll time="0" delay="7000" repeat="5000">!System.HasModalDialog + Skin.HasSetting(AutoScroll)</autoscroll>
 						<label>$INFO[ListItem.Plot]</label>
 						<shadowcolor>text_shadow</shadowcolor>
 						<visible>!ListItem.IsCollection</visible>
@@ -149,7 +149,7 @@
 				<width>482</width>
 				<height>721</height>
 				<visible>Control.HasFocus(51)</visible>
-				<animation effect="fade" time="100">VisibleChange</animation>
+				<animation effect="fade" time="0">VisibleChange</animation>
 				<texture border="8" colordiffuse="button_focus">buttons/thumbnail_focused.png</texture>
 			</control>
 			<control type="group">

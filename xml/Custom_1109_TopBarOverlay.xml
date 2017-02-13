@@ -7,7 +7,7 @@
 	<zorder>0</zorder>
 	<controls>
 		<control type="group">
-			<animation effect="slide" end="0,-90" time="300" tween="sine" easing="inout" condition="$EXP[infodialog_active]">conditional</animation>
+			<animation effect="slide" end="0,-90" time="0" tween="sine" easing="inout" condition="$EXP[infodialog_active]">conditional</animation>
 			<depth>DepthBars</depth>
 			<control type="image">
 				<left>0</left>
@@ -27,7 +27,7 @@
 			<control type="group">
 				<visible>!Window.IsActive(pvrosdchannels) + !Window.IsActive(pvrosdguide)</visible>
 				<visible>IsEmpty(Player.Art(clearlogo))</visible>
-				<animation effect="fade" time="150">VisibleChange</animation>
+				<animation effect="fade" time="0">VisibleChange</animation>
 				<left>30</left>
 				<right>400</right>
 				<control type="label">
@@ -50,7 +50,7 @@
 			</control>
 			<control type="group">
 				<visible>!Window.IsVisible(extendedprogressdialog)</visible>
-				<animation effect="fade" time="150">VisibleChange</animation>
+				<animation effect="fade" time="0">VisibleChange</animation>
 				<control type="label">
 					<font>font_clock</font>
 					<shadowcolor>text_shadow</shadowcolor>

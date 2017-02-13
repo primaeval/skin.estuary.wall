@@ -45,7 +45,7 @@
 					<top>769</top>
 					<bottom>105</bottom>
 					<label>$INFO[ListItem.Plot]</label>
-					<autoscroll time="3000" delay="7000" repeat="5000">!System.HasModalDialog + Skin.HasSetting(AutoScroll)</autoscroll>
+					<autoscroll time="0" delay="7000" repeat="5000">!System.HasModalDialog + Skin.HasSetting(AutoScroll)</autoscroll>
 				</control>
 				<control type="scrollbar" id="502600">
 					<left>20</left>
@@ -55,7 +55,7 @@
 					<onleft>502</onleft>
 					<onright>502</onright>
 					<orientation>vertical</orientation>
-					<animation effect="zoom" end="50,100" time="300" tween="sine" center="20,0" easing="inout" condition="!Control.HasFocus(502600)">conditional</animation>
+					<animation effect="zoom" end="50,100" time="0" tween="sine" center="20,0" easing="inout" condition="!Control.HasFocus(502600)">conditional</animation>
 				</control>
 				<control type="group">
 					<left>40</left>

@@ -179,7 +179,7 @@
 					<height>29</height>
 					<pagecontrol></pagecontrol>
 					<label fallback="161">$INFO[RDS.Artist]</label>
-					<autoscroll time="2000" delay="3000" repeat="5000">true</autoscroll>
+					<autoscroll time="0" delay="3000" repeat="5000">true</autoscroll>
 					<visible>String.IsEmpty(RDS.Band) + !String.IsEmpty(RDS.Artist)</visible>
 				</control>
 				<control type="label">
@@ -222,7 +222,7 @@
 					<height>100</height>
 					<pagecontrol></pagecontrol>
 					<label>$INFO[RDS.Artist]</label>
-					<autoscroll time="2000" delay="3000" repeat="5000">true</autoscroll>
+					<autoscroll time="0" delay="3000" repeat="5000">true</autoscroll>
 					<visible>!String.IsEmpty(RDS.Artist) + !String.IsEmpty(RDS.Band)</visible>
 				</control>
 				<control type="label">

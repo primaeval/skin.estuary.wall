@@ -107,7 +107,7 @@
 					<onleft>50</onleft>
 					<onright>50</onright>
 					<orientation>vertical</orientation>
-					<animation effect="zoom" start="100,100" end="50,100" center="-40,0" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(73)">conditional</animation>
+					<animation effect="zoom" start="100,100" end="50,100" center="-40,0" time="0" tween="sine" easing="inout" condition="!Control.HasFocus(73)">conditional</animation>
 				</control>
 				<control type="group">
 					<visible>!ListItem.IsFolder</visible>
@@ -156,7 +156,7 @@
 						<bottom>95</bottom>
 						<align>justify</align>
 						<label>$INFO[ListItem.Plot]</label>
-						<autoscroll delay="10000" time="3000" repeat="10000">Skin.HasSetting(autoscroll)</autoscroll>
+						<autoscroll delay="10000" time="0" repeat="10000">Skin.HasSetting(autoscroll)</autoscroll>
 					</control>
 				</control>
 				<control type="group">

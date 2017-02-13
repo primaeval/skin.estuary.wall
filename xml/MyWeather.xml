@@ -6,14 +6,14 @@
 	<controls>
 		<control type="button" id="20000">
 			<include>HiddenObject</include>
-			<animation effect="fade" time="300" start="100" end="0">Focus</animation>
+			<animation effect="fade" time="0" start="100" end="0">Focus</animation>
 			<onfocus>SetFocus(2000)</onfocus>
 			<onclick>noop</onclick>
 			<visible allowhiddenfocus="true">Control.HasFocus(20000)</visible>
 		</control>
 		<control type="button" id="20001">
 			<include>HiddenObject</include>
-			<animation effect="fade" time="300" start="100" end="0">Focus</animation>
+			<animation effect="fade" time="0" start="100" end="0">Focus</animation>
 			<onfocus>SetFocus(2000)</onfocus>
 			<onclick>noop</onclick>
 			<visible allowhiddenfocus="true">Control.HasFocus(20001)</visible>
@@ -35,7 +35,7 @@
 		<control type="group">
 			<animation effect="zoom" center="auto" end="102,102" time="0" condition="Integer.IsGreater(System.StereoscopicMode,0)">conditional</animation>
 			<animation effect="fade" start="100" end="bg_alpha" time="0" condition="Player.HasMedia">Conditional</animation>
-			<animation effect="fade" start="0" end="100" time="300" condition="Window.Previous(fullscreenvideo) | Window.Previous(startup)">WindowOpen</animation>
+			<animation effect="fade" start="0" end="100" time="0" condition="Window.Previous(fullscreenvideo) | Window.Previous(startup)">WindowOpen</animation>
 			<include>ColoredBackgroundImages</include>
 		</control>
 		<control type="multiimage">
@@ -44,9 +44,9 @@
 			<aspectratio>scale</aspectratio>
 			<fadetime>400</fadetime>
 			<animation effect="zoom" center="auto" end="102,102" time="0" condition="Integer.IsGreater(System.StereoscopicMode,0)">conditional</animation>
-			<animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
-			<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
-			<animation effect="fade" time="400">VisibleChange</animation>
+			<animation effect="fade" start="0" end="100" time="0">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0">WindowClose</animation>
+			<animation effect="fade" time="0">VisibleChange</animation>
 			<imagepath background="true" colordiffuse="bg_overlay">$VAR[WeatherFanartVar]</imagepath>
 			<visible>!Player.HasMedia</visible>
 		</control>
@@ -58,12 +58,12 @@
 			<ondown>20001</ondown>
 			<usecontrolcoords>true</usecontrolcoords>
 			<animation type="Conditional" condition="Control.IsVisible(20000)" reversible="false">
-				<effect type="slide" end="0,20" time="60" tween="sine" />
-				<effect type="slide" end="0,-20" time="180" tween="sine" delay="80" />
+				<effect type="slide" end="0,20" time="0" tween="sine" />
+				<effect type="slide" end="0,-20" time="0" tween="sine" delay="80" />
 			</animation>
 			<animation type="Conditional" condition="Control.IsVisible(20001)" reversible="false">
-				<effect type="slide" end="0,-20" time="60" tween="sine" />
-				<effect type="slide" end="0,20" time="180" tween="sine" delay="80" />
+				<effect type="slide" end="0,-20" time="0" tween="sine" />
+				<effect type="slide" end="0,20" time="0" tween="sine" delay="80" />
 			</animation>
 			<scrolltime tween="cubic" easing="out">0</scrolltime>
 			<include>OpenClose_Right</include>
@@ -88,7 +88,7 @@
 					<shadowcolor>text_shadow</shadowcolor>
 					<label>$LOCALIZE[31154]</label>
 					<visible>Control.HasFocus(20)</visible>
-					<animation effect="fade" time="400">VisibleChange</animation>
+					<animation effect="fade" time="0">VisibleChange</animation>
 				</control>
 				<control type="button" id="20">
 					<left>2.5%</left>

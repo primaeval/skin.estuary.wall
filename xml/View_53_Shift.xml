@@ -8,8 +8,8 @@
 			<height>880</height>
 			<control type="group">
 				<visible>Control.IsVisible(53)</visible>
-				<animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
-				<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
+				<animation effect="fade" start="0" end="100" time="0">WindowOpen</animation>
+				<animation effect="fade" start="100" end="0" time="0">WindowClose</animation>
 				<animation effect="fade" time="0">VisibleChange</animation>
 				<control type="image">
 					<left>0</left>
@@ -39,10 +39,10 @@
 					<visible>Control.HasFocus(53)</visible>
 					<animation effect="fade" time="0">VisibleChange</animation>
 					<texture colordiffuse="button_focus">colors/grey.png</texture>
-					<animation effect="slide" start="0,0" end="-364,0" time="300" tween="sine" easing="inout" condition="Integer.IsEqual(Container.Position,1) | Integer.IsEqual(Container.Position,0)">Conditional</animation>
-					<animation effect="slide" start="0,0" end="-364,0" time="300" tween="sine" easing="inout" condition="Integer.IsEqual(Container.Position,0)">Conditional</animation>
-					<animation effect="slide" start="0,0" end="364,0" time="300" tween="sine" easing="inout" condition="Integer.IsEqual(Container.Position,3) | Integer.IsEqual(Container.Position,4)">Conditional</animation>
-					<animation effect="slide" start="0,0" end="364,0" time="300" tween="sine" easing="inout" condition="Integer.IsEqual(Container.Position,4)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="-364,0" time="0" tween="sine" easing="inout" condition="Integer.IsEqual(Container.Position,1) | Integer.IsEqual(Container.Position,0)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="-364,0" time="0" tween="sine" easing="inout" condition="Integer.IsEqual(Container.Position,0)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="364,0" time="0" tween="sine" easing="inout" condition="Integer.IsEqual(Container.Position,3) | Integer.IsEqual(Container.Position,4)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="364,0" time="0" tween="sine" easing="inout" condition="Integer.IsEqual(Container.Position,4)">Conditional</animation>
 				</control>
 				<control type="fixedlist" id="53">
 					<left>-150</left>
@@ -110,7 +110,7 @@
 							<align>center</align>
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label]</label>
-							<autoscroll time="3000" delay="3000" repeat="3000">True</autoscroll>
+							<autoscroll time="0" delay="3000" repeat="3000">True</autoscroll>
 						</control>
 						<control type="image">
 							<left>169</left>

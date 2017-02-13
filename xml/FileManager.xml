@@ -10,8 +10,8 @@
 			<width>68</width>
 			<height>68</height>
 			<texture colordiffuse="button_focus" border="2">icons/file-manager/left-right.png</texture>
-			<animation effect="fade" start="0" end="100" time="300" delay="100">WindowOpen</animation>
-			<animation effect="fade" start="100" end="0" time="160">WindowClose</animation>
+			<animation effect="fade" start="0" end="100" time="0" delay="100">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0">WindowClose</animation>
 		</control>
 		<control type="group">
 			<left>0</left>
@@ -35,7 +35,7 @@
 				<onleft>20</onleft>
 				<onright>20</onright>
 				<orientation>vertical</orientation>
-				<animation effect="zoom" end="50,100" time="300" tween="sine" center="0,0" easing="inout" condition="!Control.HasFocus(60)">conditional</animation>
+				<animation effect="zoom" end="50,100" time="0" tween="sine" center="0,0" easing="inout" condition="!Control.HasFocus(60)">conditional</animation>
 				<texturesliderbackground />
 			</control>
 		</control>
@@ -65,7 +65,7 @@
 				<bottom>80</bottom>
 				<onleft>21</onleft>
 				<onright>21</onright>
-				<animation effect="zoom" end="50,100" time="300" tween="sine" center="812,0" easing="inout" condition="!Control.HasFocus(61)">conditional</animation>
+				<animation effect="zoom" end="50,100" time="0" tween="sine" center="812,0" easing="inout" condition="!Control.HasFocus(61)">conditional</animation>
 				<texturesliderbackground />
 				<orientation>vertical</orientation>
 			</control>
@@ -77,8 +77,8 @@
 		<control type="group">
 			<bottom>0</bottom>
 			<height>65</height>
-			<animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
-			<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
+			<animation effect="fade" start="0" end="100" time="0">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0">WindowClose</animation>
 			<control type="label">
 				<right>730</right>
 				<width>400</width>

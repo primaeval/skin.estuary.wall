@@ -38,9 +38,9 @@
 	<expression name="sidebar_visible">ControlGroup(9000).HasFocus | Control.HasFocus(6130) | Window.IsActive(MyPlaylist.xml)</expression>
 	<include name="CommonScrollbars">
 		<control type="group">
-			<animation effect="fade" start="100" end="0" time="150">WindowClose</animation>
+			<animation effect="fade" start="100" end="0" time="0">WindowClose</animation>
 			<animation effect="fade" start="100" end="0" time="0" tween="sine" condition="System.HasModalDialog">Conditional</animation>
-			<animation effect="fade" start="0" end="100" delay="300" time="320">WindowOpen</animation>
+			<animation effect="fade" start="0" end="100" delay="300" time="0">WindowOpen</animation>
 			<control type="scrollbar" id="531">
 				<right>0</right>
 				<top>80</top>
@@ -52,7 +52,7 @@
 				<texturesliderbackground />
 				<animation effect="fade" start="0" end="100" time="0" delay="300">Visible</animation>
 				<animation effect="fade" start="100" end="0" time="0">Hidden</animation>
-				<animation effect="slide" end="6,0" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(531)">conditional</animation>
+				<animation effect="slide" end="6,0" time="0" tween="sine" easing="inout" condition="!Control.HasFocus(531)">conditional</animation>
 				<visible>Control.IsVisible(52) | Control.IsVisible(500) | Control.IsVisible(55) | Control.IsVisible(501) | Control.IsVisible(54)</visible>
 			</control>
 			<control type="scrollbar" id="5199">
@@ -65,10 +65,10 @@
 				<ondown>50</ondown>
 				<orientation>horizontal</orientation>
 				<visible>Control.IsVisible(51) | Control.IsVisible(53)</visible>
-				<animation effect="slide" end="0,6" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(5199)">conditional</animation>
+				<animation effect="slide" end="0,6" time="0" tween="sine" easing="inout" condition="!Control.HasFocus(5199)">conditional</animation>
 				<animation effect="fade" start="0" end="100" time="0" delay="300">Visible</animation>
 				<animation effect="fade" start="100" end="0" time="0">Hidden</animation>
-				<animation effect="slide" end="0,90" time="300" tween="sine" easing="inout" condition="$EXP[infodialog_active]">conditional</animation>
+				<animation effect="slide" end="0,90" time="0" tween="sine" easing="inout" condition="$EXP[infodialog_active]">conditional</animation>
 			</control>
 		</control>
 	</include>
@@ -580,7 +580,7 @@
 						<height>920</height>
 						<orientation>vertical</orientation>
 						<texturesliderbackground />
-						<animation effect="slide" end="6,0" time="300" tween="sine" easing="inout" condition="!Control.HasFocus($PARAM[group_id]30)">conditional</animation>
+						<animation effect="slide" end="6,0" time="0" tween="sine" easing="inout" condition="!Control.HasFocus($PARAM[group_id]30)">conditional</animation>
 						<onleft>$PARAM[group_id]50</onleft>
 						<onright>noop</onright>
 					</control>
@@ -606,7 +606,7 @@
 			<control type="grouplist">
 				<left>20</left>
 				<top>5</top>
-				<animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
+				<animation effect="fade" start="0" end="100" time="0">WindowOpen</animation>
 				<animation effect="fade" start="100" end="0" time="0">WindowClose</animation>
 				<width>1400</width>
 				<height>80</height>
@@ -639,7 +639,7 @@
 			<control type="grouplist">
 				<left>3%</left>
 				<top>$PARAM[posy]</top>
-				<animation effect="fade" start="0" end="100" time="300" delay="300">WindowOpen</animation>
+				<animation effect="fade" start="0" end="100" time="0" delay="300">WindowOpen</animation>
 				<animation effect="fade" start="100" end="0" time="0">WindowClose</animation>
 				<width>94%</width>
 				<height>150</height>
@@ -762,8 +762,8 @@
 			<top>-2000</top>
 			<width>6000</width>
 			<height>6000</height>
-			<animation effect="fade" time="300">VisibleChange</animation>
-			<animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
+			<animation effect="fade" time="0">VisibleChange</animation>
+			<animation effect="fade" start="0" end="100" time="0">WindowOpen</animation>
 			<animation effect="fade" start="100" end="0" time="0">WindowClose</animation>
 			<texture colordiffuse="C2FFFFFF">colors/black.png</texture>
 			<visible>$PARAM[darken_bg]</visible>
@@ -836,16 +836,16 @@
 		<param name="sublabel">$INFO[Container.SortMethod,$LOCALIZE[31022]: ,  ∙  ]$INFO[Container.CurrentItem,, / ]$INFO[Container.NumItems]</param>
 		<definition>
 			<control type="group">
-				<animation effect="slide" end="0,-112" time="300" tween="sine" easing="inout" condition="$EXP[infodialog_active]">conditional</animation>
+				<animation effect="slide" end="0,-112" time="0" tween="sine" easing="inout" condition="$EXP[infodialog_active]">conditional</animation>
 				<depth>DepthBars</depth>
-				<animation effect="fade" start="0" end="100" time="300" condition="[Window.Previous(fullscreenvideo) | Window.Previous(startup)] + !Window.IsVisible(1109)">WindowOpen</animation>
+				<animation effect="fade" start="0" end="100" time="0" condition="[Window.Previous(fullscreenvideo) | Window.Previous(startup)] + !Window.IsVisible(1109)">WindowOpen</animation>
 				<control type="image">
 					<left>0</left>
 					<top>0</top>
 					<width>110%</width>
 					<height>130</height>
 					<texture>frame/InfoBar.png</texture>
-					<animation effect="fade" start="100" end="0" time="300" condition="Window.Next(screencalibration)">WindowClose</animation>
+					<animation effect="fade" start="100" end="0" time="0" condition="Window.Next(screencalibration)">WindowClose</animation>
 				</control>
 				<control type="grouplist">
 					<left>35</left>
@@ -855,7 +855,7 @@
 					<height>100</height>
 					<orientation>horizontal</orientation>
 					<usecontrolcoords>true</usecontrolcoords>
-					<animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
+					<animation effect="fade" start="0" end="100" time="0">WindowOpen</animation>
 					<animation effect="fade" start="100" end="0" time="0">WindowClose</animation>
 					<animation effect="slide" end="0,10" time="0" reversible="true" condition="String.IsEmpty(Control.GetLabel(18900))">Conditional</animation>
 					<control type="label">
@@ -906,7 +906,7 @@
 					<shadowcolor>text_shadow</shadowcolor>
 					<height>100</height>
 					<width>900</width>
-					<animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
+					<animation effect="fade" start="0" end="100" time="0">WindowOpen</animation>
 					<animation effect="fade" start="100" end="0" time="0">WindowClose</animation>
 				</control>
 				<control type="grouplist">
@@ -918,7 +918,7 @@
 					<width>900</width>
 					<itemgap>10</itemgap>
 					<visible>!Window.IsVisible(extendedprogressdialog)</visible>
-					<animation effect="fade" time="150">VisibleChange</animation>
+					<animation effect="fade" time="0">VisibleChange</animation>
 					<control type="group">
 						<width>600</width>
 						<visible>Player.HasMedia + String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))</visible>
@@ -964,7 +964,7 @@
 						<shadowcolor>text_shadow</shadowcolor>
 						<height>200</height>
 						<width>auto</width>
-						<animation effect="fade" start="100" end="0" time="300" condition="Window.Next(screencalibration)">WindowClose</animation>
+						<animation effect="fade" start="100" end="0" time="0" condition="Window.Next(screencalibration)">WindowClose</animation>
 						<label>$INFO[System.Time]</label>
 					</control>
 				</control>
@@ -1078,20 +1078,20 @@
 				<animation effect="zoom" center="auto" end="102,102" time="0" condition="Integer.IsGreater(System.StereoscopicMode,0)">conditional</animation>
 				<control type="group">
 					<animation effect="fade" start="100" end="bg_alpha" time="0" condition="!Control.IsVisible(31111)">Conditional</animation>
-					<animation effect="fade" start="0" end="100" time="300" condition="Window.Previous(fullscreenvideo) | Window.Previous(startup)">WindowOpen</animation>
+					<animation effect="fade" start="0" end="100" time="0" condition="Window.Previous(fullscreenvideo) | Window.Previous(startup)">WindowOpen</animation>
 					<include>ColoredBackgroundImages</include>
 				</control>
 				<control type="group" id="31111">
 					<visible>![Player.HasVideo | [Player.HasAudio + Visualisation.Enabled + !String.IsEmpty(Visualisation.Name)]] | !String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))</visible>
 					<depth>DepthBackground</depth>
-					<animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
-					<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
-					<animation effect="fade" time="400">VisibleChange</animation>
+					<animation effect="fade" start="0" end="100" time="0">WindowOpen</animation>
+					<animation effect="fade" start="100" end="0" time="0">WindowClose</animation>
+					<animation effect="fade" time="0">VisibleChange</animation>
 					<control type="image" id="32111">
 						<include>FullScreenDimensions</include>
 						<aspectratio>scale</aspectratio>
 						<fadetime>400</fadetime>
-						<animation effect="fade" time="400">VisibleChange</animation>
+						<animation effect="fade" time="0">VisibleChange</animation>
 						<texture background="true" colordiffuse="37FFFFFF">$VAR[MediaFanartVar]</texture>
 						<visible>!Control.IsVisible(502) | $EXP[infodialog_active]</visible>
 					</control>
@@ -1103,7 +1103,7 @@
 						<aspectratio aligny="center">scale</aspectratio>
 						<fadetime>400</fadetime>
 						<include>OpenClose_Left</include>
-						<animation effect="fade" time="400">VisibleChange</animation>
+						<animation effect="fade" time="0">VisibleChange</animation>
 						<texture background="true" colordiffuse="37FFFFFF">$VAR[PosterVar]</texture>
 						<visible>!Control.IsVisible(32111)</visible>
 					</control>
@@ -1115,10 +1115,10 @@
 		<param name="info_visible">False</param>
 		<definition>
 			<control type="group">
-				<animation effect="slide" end="0,112" time="300" tween="sine" easing="inout" condition="$EXP[infodialog_active]">conditional</animation>
+				<animation effect="slide" end="0,112" time="0" tween="sine" easing="inout" condition="$EXP[infodialog_active]">conditional</animation>
 				<depth>DepthBars</depth>
-				<animation effect="fade" start="100" end="0" time="300" condition="Window.Next(visualisation) | Window.Next(screencalibration)">WindowClose</animation>
-				<animation effect="fade" start="0" end="100" time="300" condition="Window.Previous(fullscreenvideo) | Window.Previous(startup) | Window.Previous(visualisation)">WindowOpen</animation>
+				<animation effect="fade" start="100" end="0" time="0" condition="Window.Next(visualisation) | Window.Next(screencalibration)">WindowClose</animation>
+				<animation effect="fade" start="0" end="100" time="0" condition="Window.Previous(fullscreenvideo) | Window.Previous(startup) | Window.Previous(visualisation)">WindowOpen</animation>
 				<bottom>0</bottom>
 				<control type="image">
 					<left>0</left>
@@ -1131,9 +1131,9 @@
 					<visible>$PARAM[info_visible]</visible>
 					<visible>!System.HasModalDialog</visible>
 					<visible>!Skin.HasSetting(touchmode)</visible>
-					<animation effect="fade" time="400">VisibleChange</animation>
-					<animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
-					<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
+					<animation effect="fade" time="0">VisibleChange</animation>
+					<animation effect="fade" start="0" end="100" time="0">WindowOpen</animation>
+					<animation effect="fade" start="100" end="0" time="0">WindowClose</animation>
 					<control type="button">
 						<bottom>20</bottom>
 						<left>12</left>
@@ -1175,8 +1175,8 @@
 	</include>
 	<include name="BottomBarTwoListInfo">
 		<control type="group">
-			<animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
-			<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
+			<animation effect="fade" start="0" end="100" time="0">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0">WindowClose</animation>
 			<control type="grouplist">
 				<orientation>horizontal</orientation>
 				<align>right</align>
@@ -1314,8 +1314,8 @@
 			<orientation>horizontal</orientation>
 			<visible>Skin.HasSetting(touchmode)</visible>
 			<visible>!Window.IsActive(home) + !Window.IsActive(filemanager)</visible>
-			<animation effect="fade" start="0" end="100" time="400" condition="Window.Previous(home)">WindowOpen</animation>
-			<animation effect="fade" start="100" end="0" time="300" condition="Window.Next(home)">WindowClose</animation>
+			<animation effect="fade" start="0" end="100" time="0" condition="Window.Previous(home)">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" condition="Window.Next(home)">WindowClose</animation>
 			<itemgap>0</itemgap>
 			<left>-8</left>
 			<width>480</width>

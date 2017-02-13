@@ -5,8 +5,8 @@
 	<onunload>ClearProperty(infobackground,home)</onunload>
 	<controls>
 		<control type="group">
-			<animation effect="fade" start="0" end="100" time="100">WindowOpen</animation>
-			<animation effect="fade" start="100" end="0" time="100">WindowClose</animation>
+			<animation effect="fade" start="0" end="100" time="0">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0">WindowClose</animation>
 			<animation effect="fade" start="100" end="75" time="0" condition="true">Conditional</animation>
 			<visible>Window.isActive(fullscreenvideo)</visible>
 			<include>ColoredBackgroundImages</include>
@@ -50,7 +50,7 @@
 					<height>425</height>
 					<align>justify</align>
 					<label>$INFO[ListItem.StartTime] - $INFO[ListItem.EndTime] ($INFO[ListItem.Duration])[CR]$INFO[ListItem.StartDate][CR]$INFO[ListItem.Season, [COLOR grey]S[/COLOR]]$INFO[ListItem.Episode, [COLOR grey]E[/COLOR],: ]$INFO[ListItem.EpisodeName,[B],[/B][CR]]$INFO[ListItem.Genre,[COLOR grey]$LOCALIZE[515]:[/COLOR] ,[CR]]$INFO[ListItem.Writer,[COLOR grey]$LOCALIZE[20417]:[/COLOR] ,[CR]]$INFO[ListItem.Director,[COLOR grey]$LOCALIZE[20339]:[/COLOR] ,[CR]]$INFO[ListItem.Cast,[COLOR grey]$LOCALIZE[206]:[/COLOR] ,[CR]][CR]$INFO[ListItem.Plot]</label>
-					<autoscroll time="3000" delay="4000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
+					<autoscroll time="0" delay="4000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
 				</control>
 				<control type="grouplist" id="9000">
 					<left>150</left>

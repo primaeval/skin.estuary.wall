@@ -32,7 +32,7 @@
 					<width>1050</width>
 					<height>365</height>
 					<label>$INFO[ListItem.AddonSummary,[B],[/B][CR]]$INFO[ListItem.AddonDescription][CR]$VAR[AddonNewsVar,[I][CR][CR],[/I]]</label>
-					<autoscroll delay="5000" repeat="7500" time="5000">true</autoscroll>
+					<autoscroll delay="5000" repeat="7500" time="0">true</autoscroll>
 				</control>
 				<control type="group">
 					<left>606</left>
@@ -260,11 +260,11 @@
 				<height>82</height>
 				<align>center</align>
 				<aligny>center</aligny>
-				<animation effect="fade" start="0" end="100" time="300" delay="300">WindowOpen</animation>
+				<animation effect="fade" start="0" end="100" time="0" delay="300">WindowOpen</animation>
 				<animation effect="fade" start="100" end="0" time="0">WindowClose</animation>
 				<label>[I]$INFO[ListItem.AddonDisclaimer][/I]</label>
 				<textcolor>88FFFFFF</textcolor>
-				<autoscroll time="2000" delay="3000" repeat="5000">true</autoscroll>
+				<autoscroll time="0" delay="3000" repeat="5000">true</autoscroll>
 			</control>
 			<include content="InfoDialogTopBarInfo">
 				<param name="main_label" value="$INFO[ListItem.AddonName]" />

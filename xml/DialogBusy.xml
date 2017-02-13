@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window>
-	<animation effect="fade" end="100" time="560">WindowOpen</animation>
-	<animation effect="fade" start="100" end="0" time="240">WindowClose</animation>
+	<animation effect="fade" end="100" time="0">WindowOpen</animation>
+	<animation effect="fade" start="100" end="0" time="0">WindowClose</animation>
 	<controls>
 		<control type="group">
 			<visible>String.IsEmpty(Window(Home).Property(script.cinemavision.running))</visible>
-			<animation effect="fade" time="400">VisibleChange</animation>
+			<animation effect="fade" time="0">VisibleChange</animation>
 			<visible>!Window.IsActive(startup)</visible>
 			<control type="image">
 				<texture>colors/black.png</texture>
 				<include>FullScreenDimensions</include>
 				<animation effect="fade" start="100" end="70" time="0" condition="true">Conditional</animation>
-				<animation effect="fade" start="100" end="0" time="240" condition="Window.IsVisible(fullscreenvideo)">Conditional</animation>
+				<animation effect="fade" start="100" end="0" time="0" condition="Window.IsVisible(fullscreenvideo)">Conditional</animation>
 			</control>
 			<control type="group">
 				<depth>DepthMax</depth>

@@ -262,7 +262,7 @@
 					<align>center</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Label]</label>
-					<autoscroll time="2000" delay="3000" repeat="5000">$PARAM[focused]</autoscroll>
+					<autoscroll time="0" delay="3000" repeat="5000">$PARAM[focused]</autoscroll>
 					<visible>!ListItem.IsParentFolder</visible>
 				</control>
 				<control type="image">
@@ -392,7 +392,7 @@
 					<align>center</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Label]</label>
-					<autoscroll time="2000" delay="3000" repeat="5000">$PARAM[focused]</autoscroll>
+					<autoscroll time="0" delay="3000" repeat="5000">$PARAM[focused]</autoscroll>
 					<visible>!ListItem.IsParentFolder</visible>
 				</control>
 				<control type="image">

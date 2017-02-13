@@ -93,7 +93,7 @@
 					<onright>NextChannelGroup</onright>
 					<ondown>61</ondown>
 					<onup>61</onup>
-					<animation effect="zoom" start="100,100" end="50,100" center="780,0" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(60)">conditional</animation>
+					<animation effect="zoom" start="100,100" end="50,100" center="780,0" time="0" tween="sine" easing="inout" condition="!Control.HasFocus(60)">conditional</animation>
 					<orientation>vertical</orientation>
 				</control>
 			</control>

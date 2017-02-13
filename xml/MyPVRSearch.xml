@@ -136,7 +136,7 @@
 					<onleft>50</onleft>
 					<onright>50</onright>
 					<orientation>vertical</orientation>
-					<animation effect="zoom" start="100,100" end="50,100" center="-45,0" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(77)">conditional</animation>
+					<animation effect="zoom" start="100,100" end="50,100" center="-45,0" time="0" tween="sine" easing="inout" condition="!Control.HasFocus(77)">conditional</animation>
 				</control>
 				<include>PVRInfoPanel</include>
 			</control>

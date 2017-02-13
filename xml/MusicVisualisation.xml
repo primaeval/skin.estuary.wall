@@ -14,8 +14,8 @@
 			<height>100%</height>
 			<aspectratio>scale</aspectratio>
 			<fadetime>400</fadetime>
-			<animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
-			<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
+			<animation effect="fade" start="0" end="100" time="0">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0">WindowClose</animation>
 			<texture background="true" colordiffuse="88FFFFFF">$INFO[Player.Art(fanart)]</texture>
 		</control>
 		<control type="group">

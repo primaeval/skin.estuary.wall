@@ -130,7 +130,7 @@
 						<width>670</width>
 						<height>363</height>
 						<label fallback="19055">$INFO[ListItem.Plot]</label>
-						<autoscroll delay="10000" time="5000" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
+						<autoscroll delay="10000" time="0" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
 						<visible>Integer.IsGreater(Container(4000).NumItems,0)</visible>
 					</control>
 					<control type="textbox">
@@ -139,7 +139,7 @@
 						<width>1165</width>
 						<height>363</height>
 						<label fallback="19055">$INFO[ListItem.Plot]</label>
-						<autoscroll delay="10000" time="5000" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
+						<autoscroll delay="10000" time="0" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
 						<visible>!Integer.IsGreater(Container(4000).NumItems,0)</visible>
 					</control>
 				</control>
@@ -506,9 +506,9 @@
 				<haspath>true</haspath>
 				<label>$INFO[ListItem.FileNameANdPath]</label>
 				<visible>Control.HasFocus(6)</visible>
-				<animation effect="fade" start="0" end="100" time="300" delay="300">WindowOpen</animation>
+				<animation effect="fade" start="0" end="100" time="0" delay="300">WindowOpen</animation>
 				<animation effect="fade" start="100" end="0" time="0">WindowClose</animation>
-				<animation effect="fade" start="0" end="100" time="300">Visible</animation>
+				<animation effect="fade" start="0" end="100" time="0">Visible</animation>
 				<animation effect="fade" start="100" end="0" time="0">Hidden</animation>
 			</control>
 			<include content="InfoDialogTopBarInfo">
@@ -517,7 +517,7 @@
 			</include>
 		</control>
 		<control type="group">
-			<animation effect="fade" start="0" end="100" time="300" delay="300">WindowOpen</animation>
+			<animation effect="fade" start="0" end="100" time="0" delay="300">WindowOpen</animation>
 			<animation effect="fade" start="100" end="0" time="0">WindowClose</animation>
 			<centerleft>50%</centerleft>
 			<width>1920</width>

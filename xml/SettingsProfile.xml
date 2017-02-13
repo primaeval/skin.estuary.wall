@@ -10,9 +10,9 @@
 			<aspectratio>scale</aspectratio>
 			<fadetime>600</fadetime>
 			<animation effect="zoom" center="auto" end="102,102" time="0" condition="Integer.IsGreater(System.StereoscopicMode,0)">conditional</animation>
-			<animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
-			<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
-			<animation effect="fade" time="400">VisibleChange</animation>
+			<animation effect="fade" start="0" end="100" time="0">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0">WindowClose</animation>
+			<animation effect="fade" time="0">VisibleChange</animation>
 			<imagepath background="true" colordiffuse="bg_overlay">$INFO[Skin.String(HomeFanart.path)]settings$INFO[Skin.String(HomeFanart.ext)]</imagepath>
 			<visible>!Player.HasMedia + !String.IsEmpty(Skin.String(HomeFanart.path))</visible>
 		</control>
@@ -205,7 +205,7 @@
 						<right>0</right>
 						<bottom>0</bottom>
 						<texture colordiffuse="button_focus">lists/focus.png</texture>
-						<animation effect="fade" start="100" end="50" time="40" condition="!Control.HasFocus(9000)">Conditional</animation>
+						<animation effect="fade" start="100" end="50" time="0" condition="!Control.HasFocus(9000)">Conditional</animation>
 					</control>
 					<control type="label">
 						<left>30</left>

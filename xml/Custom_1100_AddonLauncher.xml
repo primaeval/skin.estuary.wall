@@ -10,9 +10,9 @@
 			<aspectratio>scale</aspectratio>
 			<fadetime>600</fadetime>
 			<animation effect="zoom" center="auto" end="102,102" time="0" condition="Integer.IsGreater(System.StereoscopicMode,0)">conditional</animation>
-			<animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
-			<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
-			<animation effect="fade" time="400">VisibleChange</animation>
+			<animation effect="fade" start="0" end="100" time="0">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0">WindowClose</animation>
+			<animation effect="fade" time="0">VisibleChange</animation>
 			<imagepath background="true" colordiffuse="bg_overlay">$VAR[AddonsFanartVar]</imagepath>
 			<visible>!Player.HasMedia</visible>
 		</control>
@@ -96,7 +96,7 @@
 							<width>95</width>
 							<bottom>0</bottom>
 							<texture colordiffuse="button_focus">$INFO[ListItem.Art(thumb)]</texture>
-							<animation effect="fade" start="0" end="100" time="300" reversible="false">Focus</animation>
+							<animation effect="fade" start="0" end="100" time="0" reversible="false">Focus</animation>
 						</control>
 						<control type="image">
 							<left>0</left>

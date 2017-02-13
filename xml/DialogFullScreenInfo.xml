@@ -19,7 +19,7 @@
 			<visible>!Window.IsVisible(playerprocessinfo)</visible>
 			<animation effect="fade" time="0">VisibleChange</animation>
 			<control type="group">
-				<animation effect="slide" end="0,-80" time="150" condition="PVR.IsTimeShift">conditional</animation>
+				<animation effect="slide" end="0,-80" time="0" condition="PVR.IsTimeShift">conditional</animation>
 				<control type="image">
 					<depth>DepthOSD+</depth>
 					<left>10</left>
@@ -50,7 +50,7 @@
 						<height>290</height>
 						<label fallback="416">$VAR[FullScreenInfoTextBoxVar]</label>
 						<align>justify</align>
-						<autoscroll delay="5000" repeat="7500" time="5000"></autoscroll>
+						<autoscroll delay="5000" repeat="7500" time="0"></autoscroll>
 					</control>
 					<control type="grouplist" id="5550">
 						<right>20</right>

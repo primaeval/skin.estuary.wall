@@ -9,9 +9,9 @@
 			<include>FullScreenDimensions</include>
 			<aspectratio>scale</aspectratio>
 			<animation effect="zoom" center="auto" end="102,102" time="0" condition="Integer.IsGreater(System.StereoscopicMode,0)">conditional</animation>
-			<animation effect="fade" start="0" end="100" time="400" reversible="true" condition="!Window.Previous(SettingsCategory.xml)">WindowOpen</animation>
-			<animation effect="fade" start="100" end="0" time="300" reversible="true" condition="!Window.Next(SettingsCategory.xml)">WindowClose</animation>
-			<animation effect="fade" time="400">VisibleChange</animation>
+			<animation effect="fade" start="0" end="100" time="0" reversible="true" condition="!Window.Previous(SettingsCategory.xml)">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" reversible="true" condition="!Window.Next(SettingsCategory.xml)">WindowClose</animation>
+			<animation effect="fade" time="0">VisibleChange</animation>
 			<imagepath colordiffuse="35FFFFFF">$INFO[Skin.String(HomeFanart.path)]settings$INFO[Skin.String(HomeFanart.ext)]</imagepath>
 			<visible>!Player.HasMedia + !String.IsEmpty(Skin.String(HomeFanart.path))</visible>
 		</control>
@@ -62,10 +62,10 @@
 				<control type="group">
 					<depth>DepthContentPopout</depth>
 					<animation type="Focus" reversible="false">
-						<effect type="zoom" center="200,125" start="100" end="108" time="250" tween="sine" />
+						<effect type="zoom" center="200,125" start="100" end="108" time="0" tween="sine" />
 					</animation>
 					<animation type="UnFocus" reversible="false">
-						<effect type="zoom" center="200,125" start="108" end="100" time="250" tween="sine" />
+						<effect type="zoom" center="200,125" start="108" end="100" time="0" tween="sine" />
 					</animation>
 					<control type="image">
 						<width>430</width>

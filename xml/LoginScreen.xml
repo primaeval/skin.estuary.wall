@@ -66,7 +66,7 @@
 				<onup>52</onup>
 				<ondown>52</ondown>
 				<pagecontrol>60</pagecontrol>
-				<scrolltime tween="cubic" easing="out">500</scrolltime>
+				<scrolltime tween="cubic" easing="out">0</scrolltime>
 				<itemlayout height="130" width="775">
 					<control type="image">
 						<left>10</left>

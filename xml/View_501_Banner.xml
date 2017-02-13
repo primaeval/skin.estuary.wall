@@ -19,7 +19,7 @@
 				<viewtype label="20020">wide</viewtype>
 				<preloaditems>2</preloaditems>
 				<pagecontrol>531</pagecontrol>
-				<scrolltime tween="cubic" easing="out">500</scrolltime>
+				<scrolltime tween="cubic" easing="out">0</scrolltime>
 				<visible>Container.Content(tvshows)</visible>
 				<itemlayout height="220" width="900">
 					<control type="group">

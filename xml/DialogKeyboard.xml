@@ -557,7 +557,7 @@
 				<bottom>490</bottom>
 				<width>1500</width>
 				<height>200</height>
-				<scrolltime tween="cubic" easing="out">500</scrolltime>
+				<scrolltime tween="cubic" easing="out">0</scrolltime>
 				<orientation>vertical</orientation>
 				<onleft>9010</onleft>
 				<onright>9010</onright>

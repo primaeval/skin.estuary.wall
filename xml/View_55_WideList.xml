@@ -10,7 +10,7 @@
 				<top>list_y_offset</top>
 				<bottom>list_y_offset</bottom>
 				<right>0</right>
-				<scrolltime tween="cubic" easing="out">500</scrolltime>
+				<scrolltime tween="cubic" easing="out">0</scrolltime>
 				<orientation>vertical</orientation>
 				<pagecontrol>531</pagecontrol>
 				<movement>5</movement>

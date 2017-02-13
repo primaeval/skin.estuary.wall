@@ -252,7 +252,7 @@
 			<aspectratio>scale</aspectratio>
 			<texture colordiffuse="80FFFFFF">colors/black.png</texture>
 			<visible>$EXP[sidebar_visible] + !System.HasModalDialog</visible>
-			<animation effect="fade" time="200">VisibleChange</animation>
+			<animation effect="fade" time="0">VisibleChange</animation>
 		</control>
 		<control type="image">
 			<left>0</left>

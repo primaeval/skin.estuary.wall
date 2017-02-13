@@ -17,7 +17,7 @@
 			</control>
 			<control type="group">
 				<visible>!Window.IsVisible(videoosd) + !Window.IsVisible(musicosd)</visible>
-				<animation effect="fade" time="200">VisibleChange</animation>
+				<animation effect="fade" time="0">VisibleChange</animation>
 				<control type="image">
 					<left>30</left>
 					<top>90</top>
@@ -75,7 +75,7 @@
 					<font>font30</font>
 					<wrapmultiline>true</wrapmultiline>
 					<visible>!Window.IsActive(fullscreeninfo)</visible>
-					<animation effect="fade" time="200">VisibleChange</animation>
+					<animation effect="fade" time="0">VisibleChange</animation>
 					<label>$INFO[Player.TimeRemaining,[COLOR button_focus]$LOCALIZE[31134]:[CR][/COLOR]]</label>
 				</control>
 			</control>
@@ -91,7 +91,7 @@
 				<font>font45</font>
 				<shadowcolor>black</shadowcolor>
 				<visible>!Player.ChannelPreviewActive</visible>
-				<animation effect="fade" start="0" end="100" time="200" delay="1000">Visible</animation>
+				<animation effect="fade" start="0" end="100" time="0" delay="1000">Visible</animation>
 			</control>
 			<control type="label" id="40000">
 				<centerleft>50%</centerleft>
@@ -246,7 +246,7 @@
 				<orientation>horizontal</orientation>
 				<itemgap>10</itemgap>
 				<visible>!Player.ChannelPreviewActive</visible>
-				<animation effect="fade" start="0" end="100" time="200" delay="1000">Visible</animation>
+				<animation effect="fade" start="0" end="100" time="0" delay="1000">Visible</animation>
 				<include content="MediaFlag">
 					<param name="texture" value="$INFO[VideoPlayer.AudioChannels,flags/audiochannel/,.png]" />
 					<param name="visible" value="!String.IsEmpty(VideoPlayer.AudioChannels)" />

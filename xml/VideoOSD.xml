@@ -20,7 +20,7 @@
 			<bottom>0</bottom>
 			<height>180</height>
 			<visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(fullscreeninfo) | Window.IsVisible(osdaudiosettings) | Window.IsVisible(osdvideosettings) | Window.IsVisible(OSDAudioDSPSettings) | Window.IsVisible(VideoBookmarks) | Window.IsVisible(playerprocessinfo) | Window.IsVisible(osdcmssettings) | Window.IsVisible(PVROSDChannels) | Window.IsVisible(PVROSDGuide)]</visible>
-			<animation effect="fade" time="200">VisibleChange</animation>
+			<animation effect="fade" time="0">VisibleChange</animation>
 			<control type="label">
 				<right>30</right>
 				<top>0</top>

@@ -6,7 +6,7 @@
 	<controls>
 		<include>DefaultBackground</include>
 		<control type="group">
-			<animation effect="fade" start="100" end="0" time="200" tween="sine" condition="$EXP[infodialog_active]">Conditional</animation>
+			<animation effect="fade" start="100" end="0" time="0" tween="sine" condition="$EXP[infodialog_active]">Conditional</animation>
 			<control type="group">
 				<include>OpenClose_Left</include>
 				<control type="fixedlist" id="50">
@@ -156,7 +156,7 @@
 			<bottom>0</bottom>
 			<height>70</height>
 			<animation effect="fade" start="0" end="100" time="300" delay="300">WindowOpen</animation>
-			<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
+			<animation effect="fade" start="100" end="0" time="0">WindowClose</animation>
 			<include condition="!Skin.HasSetting(hide_mediaflags)">MediaFlags</include>
 		</control>
 	</controls>

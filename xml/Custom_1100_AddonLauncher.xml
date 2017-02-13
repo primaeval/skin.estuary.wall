@@ -17,7 +17,7 @@
 			<visible>!Player.HasMedia</visible>
 		</control>
 		<control type="group">
-			<animation effect="fade" start="100" end="0" time="200" tween="sine" condition="$EXP[infodialog_active]">Conditional</animation>
+			<animation effect="fade" start="100" end="0" time="0" tween="sine" condition="$EXP[infodialog_active]">Conditional</animation>
 			<control type="group" id="400">
 				<include>OpenClose_Right</include>
 				<include content="AddonLauncherPanel">

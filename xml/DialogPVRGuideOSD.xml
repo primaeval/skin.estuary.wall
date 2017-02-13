@@ -4,7 +4,7 @@
 	<controls>
 		<control type="group">
 			<depth>DepthOSD</depth>
-			<animation effect="fade" start="100" end="0" time="200" tween="sine" condition="$EXP[infodialog_active]">Conditional</animation>
+			<animation effect="fade" start="100" end="0" time="0" tween="sine" condition="$EXP[infodialog_active]">Conditional</animation>
 			<control type="group">
 				<include>OpenClose_Left</include>
 				<include content="ContentPanel">
@@ -66,7 +66,7 @@
 						</control>
 						<control type="group">
 							<visible>!String.IsEmpty(ListItem.Plot) + Control.HasFocus(11)</visible>
-							<animation effect="fade" start="0" end="100" time="200">Focus</animation>
+							<animation effect="fade" start="0" end="100" time="0">Focus</animation>
 							<control type="image">
 								<left>782</left>
 								<top>-100</top>
